@@ -55,7 +55,7 @@ name="description"
   control={control}
   render={({field })=><SimpleMDE placeholder="Description" {...field} />}
 />
-{errors.title && <Text color='red' as='p' >{errors.description.message}</Text>}
+{errors.title && <Text color='red' as='p' >{errors.description?.message}</Text>}
 
 <Button>Submit New Issue</Button>
     </form>
